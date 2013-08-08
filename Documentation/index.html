@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <title>Persona vCard Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet'>
+
+        <script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+<body>
+
+    <div class="wrapper">
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#desc">Description</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#html">HTML Structure</a></li>
+                <li><a href="#css">CSS Files</a></li>
+                <li><a href="#js">JavaScript and Plugins</a></li>
+                <li><a href="#php">PHP files</a></li>
+                <li><a href="#psd">PSD files</a></li>
+                <li><a href="#credits">Sources and Credits</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+            </ul>
+        </nav>
+
+        <div id="intro" class="cont-sec cont-b">
+            <h1>Persona — <span>Responsive HTML5 vCard Template</span></h1>
+            <p><small>Created: 10/05/2013<br> By: Alexey Ilin<br> Email: mail@alexilin.ru</small></p>
+            <p class="intro-text">Hi and thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/alexilin">here</a> or mail me at <a href="mailto:mail@alexilin.ru">mail@alexilin.ru</a>.</p>
+            <p class="intro-text">Bug reports and suggestions are welcome too!</p>
+        </div>
+
+        <div id="desc" class="cont-sec">
+            <h2>Description</h2>
+            <p>Persona is a one page <strong>responsive HTML5 vCard</strong> template. It has clean view, simple structure and it's focused on <b>YOU!</b> Template build with HTML5 simplicity, CSS3 effects and jQuery power. It's responsive, so it looks good on mobile devices.</p>
+            <p>Persona can be used not only for your personal site it's also perfect choise for your small creative agency.</p>
+            <p>All the html, css, js code are well organized and commented that allows you to make changes without any problems.</p>
+        </div>
+
+        <div id="features" class="cont-sec">
+            <h2>Features</h2>
+            <ul>
+                <li>Fully Responsive Layout</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>Clean and Semantic Code</li>
+                <li>Unique Design</li>
+                <li>Easy to Use</li>
+                <li>Nice scrollable navigation</li>
+                <li>Filterable Portfolio</li>
+                <li>Slideshow</li>
+                <li>Testimonials of your clients</li>
+                <li>Customizable google map</li>
+                <li>Contact form validation</li>
+                <li>Tweets widget</li>
+            </ul>
+        </div>
+
+        <div id="html" class="cont-sec">
+            <h2>HTML Structure</h2>
+            <p>Persona has responsive layout. Here is the general structure.</p>
+<pre class="prettyprint">
+&lt;div class="wrapper vcard"&gt;
+
+    &lt;!-- BEGIN NAV --&gt;
+    &lt;nav class="nav"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="nav-trigger"&gt;&lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li class="current"&gt;&lt;a href="#about"&gt;About me&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#resume"&gt;Resume&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#testimonials"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- END NAV --&gt;
+
+    &lt;!-- BEGIN CONTENT --&gt;
+    &lt;div class="main"&gt;
+        &lt;!-- Content --&gt;
+    &lt;/div&gt;
+    &lt;!-- END CONTENT --&gt;
+
+&lt;/div&gt;
+</pre>
+            <p>Content block consists of different sections. By default there are 5 sections.</p>
+            <ul>
+                <li>About</li>
+                <li>Resume</li>
+                <li>Portfolio</li>
+                <li>Testimonials</li>
+                <li>Contacts</li>
+            </ul>
+            <h3>Custom sections</h3>
+            <p>If you would like to add your own sections, simply add the following code:</p>
+<pre class="prettyprint">
+&lt;section id="Section-ID" class="cont-sec"&gt;
+
+    &lt;div class="sec-title"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Section title&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="container"&gt;
+        &lt;!-- Section content --&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+</pre>
+            <p>Then add new menu item with same hash as the section <code>id</code>.</p>
+<pre class="prettyprint">
+&lt;li&gt;&lt;a href="#Section-ID"&gt;Section title&lt;/a&gt;&lt;/li&gt;
+</pre>
+            <h3>Grid</h3>
+            <p>Template have simple grid system. You can use 2, 3 or 4 columns. Here are some examples:</p>
+<pre class="prettyprint">
+&lt;!-- Two columns --&gt;
+&lt;div class="cols"&gt;
+
+    &lt;div class="col col-1-2"&gt; … &lt;/div&gt;
+
+    &lt;div class="col col-1-2"&gt; … &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Three columns --&gt;
+&lt;div class="cols"&gt;
+
+    &lt;div class="col col-1-3"&gt; … &lt;/div&gt;
+
+    &lt;div class="col col-1-3"&gt; … &lt;/div&gt;
+
+    &lt;div class="col col-1-3"&gt; … &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Four columns --&gt;
+&lt;div class="cols"&gt;
+
+    &lt;div class="col col-1-4"&gt; … &lt;/div&gt;
+
+    &lt;div class="col col-1-4"&gt; … &lt;/div&gt;
+    
+    &lt;div class="col col-1-4"&gt; … &lt;/div&gt;
+
+    &lt;div class="col col-1-4"&gt; … &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+        </div>
+
+        <div id="css" class="cont-sec">
+            <h2>CSS Files</h2>
+            <p>Template uses two main CSS files.</p>
+<pre class="prettyprint">
+&lt;link rel="stylesheet" href="assets/css/normalize.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/main.css"&gt;
+</pre>
+            <p>The first one is a normalize.css. Normalize.css makes browsers display elements more consistently and in line with modern standards. It's good alternative to old CSS resets. Second file contains main stylings for the page.</p>
+            <p>Also there is one additional css file for custom content scroller script.</p>
+<pre class="prettyprint">
+&lt;link rel="stylesheet" href="assets/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css"&gt;
+</pre>
+            <h3>Media queries</h3>
+            <p>Template uses some media queries for different size screens. The built in media queries include:</p>
+            <ul>
+                <li><strong>Tablet Portrait</strong>. Between 400px and 980px</li>
+                <li><strong>Mobile Portrait</strong>. Less then 400px</li>
+            </ul>
+        </div>
+
+        <div id="js" class="cont-sec">
+            <h2>JavaScript and Plugins</h2>
+            <p>Template imports two general Javascript files.</p>
+<pre class="prettyprint">
+&lt;script src="assets/js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+</pre>
+            <p>jQuery framework for quick javascript coding.</p>
+<pre class="prettyprint">
+&lt;script src="assets/js/scripts.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Custom script file.</p>
+            <h3>External javascript plugins</h3>
+            <p>Template includes nine external third party libraries.</p>
+            <h4>Modernizr</h4>
+<pre class="prettyprint">
+&lt;script src="assets/js/modernizr-2.6.2.min.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser. Also Modernizr runs through a little loop in JavaScript to enable the various elements from HTML5 for styling in Internet Explorer.</p>
+            <h4>CSS3 PIE</h4>
+<pre class="prettyprint">
+.photo, .photo img, .btn, .btn-2, .filter li, .skill, .skill .progress, .date{behavior:url("assets/js/PIE.htc")}
+</pre>
+            <p>CSS3 PIE makes Internet Explorer 6-9 capable of rendering several of the most useful CSS3 decoration features.</p>
+            <h4>jQuery One Page Navigation Plugin</h4>
+<pre class="prettyprint">
+&lt;script src="assets/js/jquery-ui-1.9.2.custom.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/plugins/ope-page-nav/jquery.scrollTo.js"&gt;&lt;/script&gt;
+&lt;script src="assets/plugins/ope-page-nav/jquery.nav.js"&gt;&lt;/script&gt;
+</pre>
+            <p>A lightweight jQuery plugin for the navigation on one-page sites.</p>
+            <p>To change scroll speed, find Main navigation scroll section in script.js file and change the <code>scrollSpeed</code> param.</p>
+<pre class="prettyprint">
+// Main navigation scroll
+$('nav.nav').onePageNav({
+    scrollSpeed:500,
+    scrollOffset:59,
+    easing:'easeInOutQuart',
+    begin: function() {
+        //Hack so you can click other menu items after the initial click
+        $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
+    },
+    end: function() {
+        $('#device-dummy').remove();
+    }
+});
+</pre>
+            <h4>jQuery custom content scroller</h4>
+<pre class="prettyprint">
+&lt;script src="assets/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Custom scrollbar plugin.</p>
+            <p>To make custom scrollbar simply add <code>.scroll</code> css class to the element you want. Any element you’re attaching the custom scrollbar should have a typical styling of an overflowed block, e.g. a height (or max-height) value, overflow: auto (or hidden) and its content should be long enough to require a scrollbar.</p>
+            <p>If you would like to edit «Education» and «Employment» blocks height in «Resume» section, find and change the following style in the style sheet:</p>
+<pre class="prettyprint">
+.exp{height:380px}
+</pre>
+            <h4>Quicksand</h4>
+<pre class="prettyprint">
+&lt;script src="assets/plugins/quicksand/jquery.quicksand.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Filter items with a nice animation.</p>
+            <h4>Cycle 2</h4>
+<pre class="prettyprint">
+&lt;script src="assets/plugins/cycle2/jquery.cycle2.min.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Slideshow plugin.</p>
+            <h4>Google Maps API</h4>
+<pre class="prettyprint">
+&lt;script src="http://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;
+</pre>
+            <p>To change map location, you need to write your own latitude and longitude in scripts.js.</p>
+<pre class="prettyprint">
+// Latitude and longitude for your location goes here
+lat = 55.750497,
+lng = 37.616243,
+</pre>
+            <p>To know your coordinates go to the Google maps page, right-click on the place you want on the map, select "What's here?" and the coordinates will appear in search box.</p>
+            <p>You can read more about Google Map API <a href="https://developers.google.com/maps/documentation/javascript/styling">here</a>.</p>
+            <h4>jQuery plugin: Validation</h4>
+<pre class="prettyprint">
+&lt;script src="assets/plugins/validate/jquery.validate.js"&gt;&lt;/script&gt;
+</pre>
+            <p>jQuery plugin for clientside form validation.</p>
+            <h4>Twitter timeline</h4>
+<pre class="prettyprint">
+&lt;script&gt;
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+            js=d.createElement(s);js.id=id;
+            js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document,"script","twitter-wjs");
+&lt;/script&gt;
+&lt;script src="assets/plugins/tweets-customize/customize-twitter-1.1.min.js"&gt;&lt;/script&gt;
+</pre>
+            <p>Display latest tweets on site.</p>
+            <p>To display your last tweets, you need to create twitter timeline widget <a href="https://twitter.com/settings/widgets">here</a>. Just create a widget with default settings. Then copy the widget id from the resulting html code to the <code>data-widget-id</code> param in the template tweets section.</p>
+<pre class="prettyprint">
+&lt;!-- BEGIN TWEETS --&gt;
+&lt;div class="tweet"&gt;
+
+    &lt;a class="twitter-timeline"  href="https://twitter.com/YOUR-TWITTER-USERNAME" data-widget-id="YOUR-TWITTER-TIMELINE-WIDGET-ID" data-theme="dark" data-link-color="#72B5E5" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3"&gt;Tweets by @YOUR-TWITTER-USERNAME&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;!-- END TWEETS --&gt;
+</pre>
+        <p>Also replace «YOUR-TWITTER-USERNAME» with your username.</p>
+        </div>
+
+        <div id="php" class="cont-sec">
+            <h2>PHP files</h2>
+            <p>Еemplate uses a single php file that is needed for the contact form. To make contact form work properly, you need to change adress of the recipient in the send.php file.</p>
+<pre class="prettyprint">
+$to = "mail@yoursite.com"; // Change the recipient email address to your address.
+</pre>
+        </div>
+
+        <div id="psd" class="cont-sec">
+            <h2>PSD files</h2>
+            <p>I've included one psd file with this template. PSD contain all the graphics elements used to build this template.</p>
+        </div>
+
+        <div id="credits" class="cont-sec">
+            <h2>Sources and Credits</h2>
+            <h3>Photos &amp; images</h3>
+            <p>Photos used in this template are licenced properly from PhotoDune. Images are not included in the download package.</p>
+            <ul>
+                <li>Executive daydreaming (<strong>only in preview</strong>)<br> <a href="http://photodune.net/item/executive-daydreaming/650750">http://photodune.net/item/executive-daydreaming/650750</a></li>
+                <li>Geek man (<strong>only in preview</strong>)<br> <a href="http://photodune.net/item/geek-man-sit-laptop-computer-ok-positive-gesture/1383489">http://photodune.net/item/geek-man-sit-laptop-computer-ok-positive-gesture/1383489</a></li>
+                <li>Portfolio Images from envato assets library, <strong>you don't have the right to use theme in your own projects</strong>!</li>
+                <li>More icon <br> <a href="http://www.iconfinder.com/icondetails/126574/48/more_icon">http://www.iconfinder.com/icondetails/126574/48/more_icon</a></li>
+                <li>Pace Social Icon Set<br> <a href="http://www.designdeck.co.uk/a/1252">http://www.designdeck.co.uk/a/1252</a></li>
+            </ul>
+            <h3>Fonts</h3>
+            <ul>
+                <li>Quicksand<br> <a href="http://www.google.com/fonts/specimen/Quicksand">http://www.google.com/fonts/specimen/Quicksand</a></li>
+            </ul>
+            <h3>CSS</h3>
+            <ul>
+                <li>Normalize.css<br> <a href="http://necolas.github.io/normalize.css/">http://necolas.github.io/normalize.css/</a></li>
+            </ul>
+            <h3>Javascript</h3>
+            <ul>
+                <li>jQuery<br> <a href="http://jquery.com/">http://jquery.com/</a></li>
+                <li>Modernizr<br> <a href="http://modernizr.com/">http://modernizr.com/</a></li>
+                <li>CSS3 PIE<br> <a href="http://css3pie.com/">http://css3pie.com/</a></li>
+                <li>jQuery One Page Navigation Plugin<br> <a href="http://trevordavis.net/blog/jquery-one-page-navigation-plugin">http://trevordavis.net/blog/jquery-one-page-navigation-plugin</a></li>
+                <li>jQuery custom content scroller<br> <a href="http://manos.malihu.gr/jquery-custom-content-scroller/">http://manos.malihu.gr/jquery-custom-content-scroller/</a></li>
+                <li>Quicksand<br> <a href="http://razorjack.net/quicksand/">http://razorjack.net/quicksand/</a></li>
+                <li>Cycle 2<br> <a href="http://jquery.malsup.com/cycle2/">http://jquery.malsup.com/cycle2/</a></li>
+                <li>jQuery plugin: Validation<br> <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+                <li>Custom CSS to the Twitter 1.1 Embed Widget<br> <a href="https://github.com/kevinburke/customize-twitter-1.1">https://github.com/kevinburke/customize-twitter-1.1</a></li>
+            </ul>
+        </div>
+
+        <div id="changelog" class="cont-sec">
+            <h2>Changelog</h2>
+            <p><strong>Version 1.00 - 14/05/2013</strong></p>
+            <ul>
+                <li>Initial Release</li>
+            </ul>
+            <p><strong>Version 1.05 - 16/05/2013</strong></p>
+            <ul>
+                <li>Fixed font rendering in some browsers</li>
+            </ul>
+            <p><strong>Version 1.10 - 21/05/2013</strong></p>
+            <ul>
+                <li>Added ajax send mail functionality</li>
+            </ul>
+        </div>
+
+        <div class="cont-sec">
+            <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template.</p>
+            <p>Alexey Ilin</p>
+        </div>
+
+    </div>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+</body>
+</html>
