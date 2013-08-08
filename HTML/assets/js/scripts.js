@@ -70,8 +70,8 @@
     ],
         
     // Latitude and longitude for your location goes here
-    lat = 55.750497,
-    lng = 37.616243,
+    lat = 37.583333,
+    lng = -122.363611,
 
     // Create a new StyledMapType object, passing it the array of styles,
     // as well as the name to be displayed on the map type control.
