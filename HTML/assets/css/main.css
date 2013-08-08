@@ -56,7 +56,7 @@ input[type="text"]:focus, textarea:focus{background:#72B5E5;color:#fff}
 :-ms-input-placeholder{color:#333}
 input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:shake 0.5s;-o-animation:shake 0.5s;animation:shake 0.5s}
 
-.clearfix:before, .clearfix:after, .cols:before, .cols:after{content:" ";display:table}
+.clearfix:before, .clearfix:after, .cols:before, .cols:after{content: " ";display:table}
 .clearfix:after, .cols:after{clear:both}
 .lt-ie8 .clearfix, .lt-ie8 .cols{zoom:1}
 
@@ -182,18 +182,6 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
     .lt-ie9 .works a:after{display:none}
     .works a:hover:after{opacity:0.9}
 
-.slideshow{position:relative;overflow:hidden}
-    .slideshow .slides{margin:0 115px;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
-    .slideshow .slide{width:100%}
-    .slideshow .slide-photo{margin:0 0 15px;text-align:center}
-        .slideshow .slide-photo img{max-width:100%;height:auto}
-    .slideshow h3{margin:0 0 15px}
-    .slideshow .date{background:#fff;color:#72B5E5}
-    .slideshow .slideshow-nav{position:relative;z-index:1000}
-    .slideshow .cycle-prev, .slideshow .cycle-next{position:absolute;top:0}
-    .slideshow .cycle-prev{left:0}
-    .slideshow .cycle-next{right:0}
-
 .testimonials .item{margin:0 0 20px;background:#F6F6F6;-webkit-border-radius:20px;border-radius:20px}
 .testimonials .author{padding:10px 20px;-webkit-border-radius:20px;border-radius:20px;font:1em/1.4 'quicksandbold';text-transform:uppercase;cursor:pointer;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
 .testimonials .active .author{background:#333;color:#fff}
@@ -273,10 +261,6 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
         .filter li{float:none}
     .works{padding:0}
     .works li{float:none;width:100%;padding:0 0 15px}
-    .slideshow .container{padding:15px}
-    .slideshow .slides{margin:0}
-    .slideshow .slideshow-nav{margin:0 0 15px;text-align:center}
-    .slideshow .cycle-prev, .slideshow .cycle-next{position:static}
     .testimonials .photo{float:none;margin:0 auto 15px}
 }
 

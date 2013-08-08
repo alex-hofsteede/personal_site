@@ -45,46 +45,6 @@
         $('.progress', this).width(progress);
     });
 
-    // Hide portfolio slideshow by default
-    $('.slideshow').slideUp();
-
-    // Clone portfolio items to get a second collection for Quicksand plugin
-    var $portfolioClone = $(".works").clone();
-    
-    // Attempt to call Quicksand on every click event handler
-    $(".filter li").click(function(e){
-        
-        $(".filter li").removeClass("active"); 
-        
-        // Get the class attribute value of the clicked link
-        var $filterClass = $(this).attr("class");
-
-        if ( $filterClass == "all" ) {
-            var $filteredPortfolio = $portfolioClone.find("li");
-        } else {
-            var $filteredPortfolio = $portfolioClone.find("li[data-type~=" + $filterClass + "]");
-        }
-        
-        // Call quicksand
-        $(".works").quicksand( $filteredPortfolio, { 
-            duration: 400,
-            adjustWidth: false
-        });
-
-        $(this).addClass("active");
-
-        // Prevent the browser jump to the link anchor
-        e.preventDefault();
-    })
-
-    // Show portfolio slideshow
-    $(document).on('click', '.works li', function() {
-        $('.slideshow').slideDown();
-        var target = $(this).data('id');
-        target = target.substring(3) - 1;
-        $('.slideshow .slides').cycle('goto', target);
-    })
-
     // Show / hide testimonials
     $('.testimonials .item').each(function() {
         $('.author', this).click(function() {
