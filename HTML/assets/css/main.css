@@ -39,7 +39,8 @@ h4{margin:0 0 10px;font:1.1em/1 'quicksandbold'}
 p{margin:0 0 25px;font-size:0.9em;line-height:1.4}
 ol, ul{margin:0 0 25px;padding:0 0 0 40px;font-size:0.9em;line-height:1.4}
 nav ol, nav ul{list-style:none;margin:0}
-a{color:#72B5E5}
+a{color:#72B5E5; text-decoration:none;}
+h4 a{color:#333; text-decoration:none;}
 a:hover{text-decoration:none}
 address{font-style:normal;font-size:0.8em;line-height:1.6}
 blockquote{margin:0}
