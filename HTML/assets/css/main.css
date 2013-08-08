@@ -182,15 +182,6 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
     .lt-ie9 .works a:after{display:none}
     .works a:hover:after{opacity:0.9}
 
-.testimonials .item{margin:0 0 20px;background:#F6F6F6;-webkit-border-radius:20px;border-radius:20px}
-.testimonials .author{padding:10px 20px;-webkit-border-radius:20px;border-radius:20px;font:1em/1.4 'quicksandbold';text-transform:uppercase;cursor:pointer;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
-.testimonials .active .author{background:#333;color:#fff}
-.testimonials .author:hover{background:#72B5E5;color:#fff}
-    .testimonials .author span{font:1em 'quicksandregular'}
-.testimonials .inner{position:relative;padding:20px}
-.js .testimonials .inner{display:none}
-.testimonials .photo{float:left;width:100px;height:100px;margin:0 20px 0 0}
-
 .contacts{position:relative}
     .contacts .map{height:480px}
     .contacts .inner{position:absolute;left:0;bottom:0;width:100%;padding:25px 0;background:rgba(114,181,229,0.9);-pie-background:rgba(114,181,229,0.9);color:#fff;text-align:center;line-height:1.6;text-transform:uppercase}
@@ -261,7 +252,6 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
         .filter li{float:none}
     .works{padding:0}
     .works li{float:none;width:100%;padding:0 0 15px}
-    .testimonials .photo{float:none;margin:0 auto 15px}
 }
 
-.photo, .photo img, .btn, .btn-2, .filter li, .skill, .skill .progress, .date, .tools li, .testimonials .item, .testimonials .author, .contacts .inner, .social-nav a, .message{behavior:url("assets/js/PIE.htc")}
+.photo, .photo img, .btn, .btn-2, .filter li, .skill, .skill .progress, .date, .tools li, .item, .author, .contacts .inner, .social-nav a, .message{behavior:url("assets/js/PIE.htc")}

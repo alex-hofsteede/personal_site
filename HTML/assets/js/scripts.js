@@ -45,13 +45,6 @@
         $('.progress', this).width(progress);
     });
 
-    // Show / hide testimonials
-    $('.testimonials .item').each(function() {
-        $('.author', this).click(function() {
-            $(this).parent().toggleClass('active').find('.inner', this).slideToggle();
-        })
-    })
-
     // MAP SETUP
     // Create an array of styles.
     var stylesArray = [
