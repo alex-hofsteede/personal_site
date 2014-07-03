@@ -169,7 +169,7 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
 .tools{margin:0;padding:0;font-size:0.8em;text-transform:uppercase;list-style:none}
     .tools li{position:relative;float:left;margin:5px 5px;padding:5px 10px;background:#F6F6F6;-webkit-border-radius:20px;border-radius:20px}
 
-.project {margin:0 0 15px;}
+.project h4{margin:15px 0 0;}
 
 .showcase{position:relative;margin:0 -30px 0 0}
 
@@ -237,7 +237,7 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
     .nav a{height:auto;padding:15px 20px}
     .nav .current a, .nav .current a:hover{background:#f6f6f6}
     .intro{padding:10px 0}
-    .about .photo{margin-right:30px}
+    .project .photo{margin-right:30px}
     .exp{height:auto}
     .feedback-form{margin:0 0 30px}
 }
@@ -246,6 +246,7 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
     .container, .sec-title .container{padding:15px}
     .intro .btn-2{margin:0 0 10px}
     .about .photo{float:none;margin:auto}
+    .project .photo{float:none;margin:auto}
     .skills h4{font-size:0.8em}
     .showcase{margin:0}
     .filter{margin:0 0 30px}
