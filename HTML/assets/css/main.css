@@ -169,6 +169,8 @@ input.inp-error, textarea.inp-error{-webkit-animation:shake 0.5s;-moz-animation:
 .tools{margin:0;padding:0;font-size:0.8em;text-transform:uppercase;list-style:none}
     .tools li{position:relative;float:left;margin:5px 5px;padding:5px 10px;background:#F6F6F6;-webkit-border-radius:20px;border-radius:20px}
 
+.project {margin:0 0 15px;}
+
 .showcase{position:relative;margin:0 -30px 0 0}
 
 .works{width:100%;margin:0;padding:0 0 30px;list-style:none;font-size:1.4em;line-height:1;text-transform:uppercase}
